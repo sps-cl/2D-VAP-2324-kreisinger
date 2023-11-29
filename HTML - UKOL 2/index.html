@@ -60,15 +60,26 @@
             <tr>
                 <td>pohlaví:</td>
                 <td>
-                    <input type="radio" id="muz" name="pohlavi" value="muz" required><label for="muz">muž</label>
-                    <input type="radio" id="zena" name="pohlavi" value="zena" required><label for="zena">žena</label>
+                    <label for="muz">muž</label>
+                    <input type="radio" id="muz" name="pohlavi" value="muz" required>
+                    
+                    <label for="zena">žena</label>
+                    <input type="radio" id="zena" name="pohlavi" value="zena" required>
+                    
                 </td>
             </tr>
             <tr>
-                <td><label></label></td>
-                <td><input type="select"></td>
+                <th><label for="vzdelani">Vzdělání:</label></th>
+                <th><select name="vzdelani" id="vzdelani" required>
+                    <option value="ZŠ">Základní</option>
+                    <option value="SŠ">Středoškolské</option>
+                    <option value="Bc">Bakalářské</option >
+                    <option value="Ing">Inženýrské</option>
+                    <option value="Mgr">Magisterské</option>
+                    <option value="Dr">Doktorské</option>
             </tr>
         </tbody>
     </table>
+    <input type="submit" value="Potvrdit">
 </form>
 </html>
