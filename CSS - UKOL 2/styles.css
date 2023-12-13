@@ -37,7 +37,7 @@
     animation-name: animace;
     animation-iteration-count:  infinite;
     animation-duration: 2s;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
 }
 
 .inline-div:hover, .inline-block-div:hover, .block-div:hover, .flex-div:hover{
