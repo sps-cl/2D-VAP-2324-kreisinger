@@ -32,8 +32,7 @@
     margin: 20px;
     text-align: center;
     color: gray;
-    font-family: monospace;
-    font-size: 2%;
+    font-family: monospace 2rem;
     transition: background-color 3s;
     animation-name: animace;
     animation-iteration-count:  infinite;
