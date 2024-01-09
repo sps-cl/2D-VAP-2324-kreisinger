@@ -9,7 +9,12 @@ function vytvoritTabulku(){
 
     for (let i = 1; i < pocetRadku; i++) {
         radek = tabulka.insertRow();
-        radek.innerText(i)
+        for (let j = 1; j < pocetSloupcu; j++) {
+            bunka = radek.insertCell()
+            bunka.innerText(i)
+            
+        }
     }
+    document.body.appendChild(tabulka)
     
 }
