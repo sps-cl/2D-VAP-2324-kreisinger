@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulář</h1>
+    <form action="/uloz-uzivatele" method="post">
+        <input id="jmeno" type="text" name="jmeno" placeholder="Jméno">
+        <input id = "prijmeni" type= "text" name="prijmeni" placeholder="Příjmení">
+        <input type="submit" value="poslat">
+    </form>
+    <form>
+        <input type="button" value="poslat2" onclick="poslat()">
+    </form>
+
+    <script>
+        async function poslat(){
+            let data = await fetch("/uloz-uzivatele",
+            {
+                method: 'post',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(
+                    {
+                        jmeno: document.getElementById('jmeno').value,
+                        prijmeni: document.getElementById('prijmeni').value
+                    }
+                )
+            }
+            );
+        }
+    </script>
+
+</body>
+</html>
