@@ -12,10 +12,19 @@ namespace app_1
         {
             Console.WriteLine("vložte první číslo pro součet");
             int a = int.Parse(Console.ReadLine());
-            Console.WriteLine($"vaše první číslo je: {a}");
+            Console.WriteLine("vložte operátor");
+            string oper = Console.ReadLine();
             Console.WriteLine("vložte druhé číslo pro součet");
             int b = int.Parse(Console.ReadLine());
-            Console.WriteLine($"výsledek je: {a + b}");
+            if (oper == "+"){
+               Console.WriteLine($"výsledek je: {a + b}");
+            }else if(oper == "-"){
+                Console.WriteLine($"výsledek je: {a - b}");
+            }else if(oper == "*"){
+                Console.WriteLine($"výsledek je: {a * b}");
+            }else if(oper == "*"){
+                Console.WriteLine($"výsledek je: {a * b}");
+            }                                     
             Console.Read();
         }
     }
